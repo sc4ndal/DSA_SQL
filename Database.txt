@@ -1,0 +1,74 @@
+0506
+
+정형 데이터 : 형태 o 연산 o
+반정형 데이터 : 형태 o 연산 x
+비정형 데이터 : 형태 x 연산 x
+
+# Database : 정형 데이터 기반
+# 데이터 Object Type
+	1) 벡터 : 1차원			=> 정형 데이터
+	2) 행렬 : 2차원			=> 정형 데이터
+	3) ⭐데이터프레임 : 2차원		=> 정형 데이터
+	==> 엑셀 sheet (=table)
+	4) 배열 : 2차원 이상		=> 정형 데이터
+	5) 리스트 : 1차원에서 진화	=> 반정형 데이터
+
+Database : 2차원 지원
+==> 1971 IBM 산호세연구소 Dr.Codd
+- Select
+- Project	<- 없어짐 (Select랑 합쳐짐)
+- Join
+- Union
+- Minus
+
+SQL --------------------------------------------------------------------------
+- DQL(조회) : select
+- DDL(정의) : create, alter, drop
+- DML(조작) : insert, update, delete
+- DCL(제어) : grant, revoke
+- TCL : rollback, commit
+
+==========================================
+0507
+
+3 Tier(MVC)
+Frontend - Middleware - Database
+
+Java		Java		  SQL
+JavaScript	C#
+Python
+
+비정형
+반정형   =>   반정형   =>   정형
+정형		    정형
+
+MySql
+=> 1개의 database = n개의 Table (=sheet)
+
+Oracle
+=> 1개의 database = n개의 Tablespace
+			      1개의 Tablespace = n개의 Table
+
+Database 함수
+=> SQL을 도와주는 역할
+
+SQL => 선언적인 언어 => 앞/뒤 명령어 관계 X
+==> 앞/뒤 명령어가 관계 X <장점>
+==> 제어문 ( if ) 불가 <단점>
+
+
+# 함수 지원 (제어하는 것 명령어)
+- 단일행 함수 : round()			1:1
+	input 수 == output 수
+	can be nested (중첩 가능)	===> f3(f2(f1(x)))
+							 a = f1(x)
+							 b = f2(a)
+							 f3(b)
+- 다행 함수 (그룹함수) : avg()		N:N
+	input 수 != output 수
+	cannot be nested (중첩 불가능)	->	평균값 구하고 최대값 못 구함
+
+
+
+
+
